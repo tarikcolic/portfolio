@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarik Čolić · Software Developer</title>
+  <meta name="description" content="Tarik Čolić is a software developer and Software Engineering student from Mostar, building full-stack web applications and tools for scientific data.">
+  <meta name="author" content="Tarik Čolić">
+  <meta name="theme-color" content="#fffdee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1424" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://tarikcolic.github.io/portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tarik Čolić · Software Developer">
+  <meta property="og:description" content="Full-stack web applications and tools for scientific data.">
+  <meta property="og:url" content="https://tarikcolic.github.io/portfolio/">
+  <meta property="og:image" content="https://tarikcolic.github.io/portfolio/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Runs before paint: apply saved theme and flag JS so reveal styles only apply when scripts run.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tarik Čolić",
+    "jobTitle": "Software Developer",
+    "url": "https://tarikcolic.github.io/portfolio/",
+    "image": "https://tarikcolic.github.io/portfolio/assets/img/tarik.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mostar", "addressCountry": "BA" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Džemal Bijedić in Mostar, Faculty of Information Technologies" },
+      { "@type": "CollegeOrUniversity", "name": "University of Maribor, Faculty of Electrical Engineering and Computer Science" }
+    ],
+    "sameAs": ["https://github.com/tarikcolic", "https://www.linkedin.com/in/tarikcolic"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#top" aria-label="Tarik Čolić, back to top">
+        <span class="nav__mark">TČ</span>
+        <span class="nav__name">Tarik Čolić</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about" data-nav>About</a>
+        <a href="#work" data-nav>Work</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#education" data-nav>Education</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#contact" data-nav>Contact</a>
+        <span class="nav__indicator" aria-hidden="true"></span>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme" data-theme-toggle>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+        <a class="btn btn--small btn--solid nav__cv" href="assets/Tarik_Colic_CV.pdf" download>
+          CV <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about"><small>01</small>About</a>
+      <a href="#work"><small>02</small>Work</a>
+      <a href="#experience"><small>03</small>Experience</a>
+      <a href="#education"><small>04</small>Education</a>
+      <a href="#skills"><small>05</small>Skills</a>
+      <a href="#contact"><small>06</small>Contact</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:tarikcolic22@gmail.com">tarikcolic22@gmail.com</a>
+      <a href="assets/Tarik_Colic_CV.pdf" download>Download CV ↓</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__meta" data-reveal>
+          <span>Portfolio · 2026</span>
+          <span class="hero__status"><i class="dot" aria-hidden="true"></i>Open to software &amp; data engineering roles</span>
+        </div>
+
+        <h1 class="hero__title" id="hero-title" aria-label="Software Developer">
+          <span class="line" aria-hidden="true"><span class="split">Software</span></span>
+          <span class="line" aria-hidden="true"><span class="split">Developer</span></span>
+        </h1>
+
+        <figure class="hero__photo" data-reveal data-tilt>
+          <picture>
+            <source srcset="assets/img/tarik.webp" type="image/webp">
+            <img src="assets/img/tarik.jpg" width="360" height="480" alt="Portrait of Tarik Čolić" fetchpriority="high">
+          </picture>
+          <figcaption><span>Mostar, BiH</span><span class="clock" data-clock>--:--</span></figcaption>
+        </figure>
+
+        <div class="hero__intro">
+          <p class="hero__rotator" data-reveal>
+            I build
+            <span class="rotator" aria-live="polite">
+              <span class="rotator__word is-active">full-stack web apps</span>
+              <span class="rotator__word">tools for genetic data</span>
+              <span class="rotator__word">secure back ends</span>
+              <span class="rotator__word">models of real systems</span>
+              <span class="rotator__word">interfaces people enjoy</span>
+            </span>
+          </p>
+          <p class="hero__lead" data-reveal>
+            Third-year Software Engineering student at FIT Mostar, back from an Erasmus+ semester at the University of Maribor.
+            I write full-stack web applications and use code to analyze scientific data, from DNA sequences to RNA-seq experiments.
+          </p>
+          <div class="hero__cta" data-reveal>
+            <a class="btn btn--solid" href="#work" data-magnetic>View my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0-6-6m6 6 6-6"/></svg></a>
+            <a class="btn btn--ghost" href="assets/Tarik_Colic_CV.pdf" download data-magnetic>Download CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="helix" aria-hidden="true">
+        <canvas id="helix"></canvas>
+      </div>
+
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" aria-label="At a glance">
+      <div class="container stats__grid">
+        <div class="stat" data-reveal><strong data-count="30" data-suffix="+">0</strong><span>public repositories on GitHub</span></div>
+        <div class="stat" data-reveal><strong data-count="3">0</strong><span>scholarships: HTEC, ZIRA and BH Futures</span></div>
+        <div class="stat" data-reveal><strong data-count="2">0</strong><span>universities, Mostar and Maribor</span></div>
+        <div class="stat" data-reveal><strong data-count="6" data-suffix="+">0</strong><span>years of graphic design work</span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">01</span>
+          <h2 class="section__title" id="about-title">About</h2>
+        </header>
+
+        <div class="about">
+          <p class="about__statement" data-reveal data-words>
+            I turn abstract problems into software that holds up, and I like it best when the problem comes from science.
+          </p>
+
+          <div class="about__body">
+            <div class="about__text" data-reveal>
+              <p>
+                I started at the Electrical Engineering High School in Mostar, writing C++, C# and Java. My graduation thesis was a web
+                application for analyzing genetic code and modeling proteins, and it set the direction for what came next.
+              </p>
+              <p>
+                Today I study Software Engineering at the Faculty of Information Technologies in Mostar. In 2026 I spent an Erasmus+
+                semester at the University of Maribor, taking non-relational databases, information security, computer graphics and
+                project management.
+              </p>
+              <p>
+                Outside coursework I solve Rosalind bioinformatics problems, model epidemics with differential equations and analyze
+                RNA-seq data in R. Next I want a role in software or data engineering, followed by a master's degree with a scientific focus.
+              </p>
+            </div>
+
+            <aside class="about__side" data-reveal>
+              <dl class="now">
+                <div><dt>Studying</dt><dd>Software Engineering, 3rd year at FIT Mostar</dd></div>
+                <div><dt>Exploring</dt><dd>Transcriptomics in R with DESeq2 and Seurat</dd></div>
+                <div><dt>Looking for</dt><dd>Software and data engineering roles</dd></div>
+                <div><dt>Next</dt><dd>A science-focused master's</dd></div>
+              </dl>
+              <div class="interests">
+                <span class="interests__label">Interests</span>
+                <ul class="chips">
+                  <li>Bioinformatics</li><li>Data science</li><li>Physics</li><li>Mathematics</li><li>Biotechnology</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <div class="design-band" data-reveal>
+            <div class="design-band__label">Also a designer</div>
+            <p>
+              Since 2020 I have designed social media campaigns, print posters, books, magazines and interfaces for apps and websites.
+              I coordinated the design team at BEST Mostar and designed the merch for the BH Futures Leaders Summit 2026.
+            </p>
+            <ul class="chips chips--quiet"><li>Figma</li><li>Adobe Creative Suite</li><li>Blender</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section section--work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">02</span>
+          <h2 class="section__title" id="work-title">Selected work</h2>
+          <p class="section__sub">Web apps, back ends and tools for scientific data. Two of the cards below are live: they run on real model parameters and real results.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects" data-reveal>
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="science" aria-pressed="false">Data &amp; science</button>
+          <button type="button" class="filter" data-filter="web" aria-pressed="false">Web &amp; back end</button>
+          <span class="filters__pill" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects">
+          <!-- StreamGene -->
+          <article class="project project--wide" data-cat="science web" data-reveal>
+            <div class="project__visual project__visual--seq" aria-hidden="true">
+              <div class="seq" data-seq>
+                <div class="seq__row"><span class="seq__lbl">DNA 5′</span><span class="seq__strand" data-strand="dna"></span></div>
+                <div class="seq__row"><span class="seq__lbl">3′</span><span class="seq__strand seq__strand--muted" data-strand="comp"></span></div>
+                <div class="seq__row"><span class="seq__lbl">mRNA</span><span class="seq__strand" data-strand="rna"></span></div>
+                <div class="seq__row"><span class="seq__lbl">Protein</span><span class="seq__strand seq__strand--aa" data-strand="aa"></span></div>
+                <div class="seq__stats">
+                  <span>GC <b data-gc>0.0%</b></span>
+                  <span>Length <b data-len>0 bp</b></span>
+                  <span>Codons <b data-codons>0</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2023 – 2024</span><span>Python · Streamlit</span></div>
+              <h3 class="project__title">StreamGene</h3>
+              <p class="project__desc">
+                A browser toolkit for everyday sequence work: nucleotide counts, GC content, complement strands, transcription to RNA and
+                translation to protein. It renders molecules from PDB files in interactive 3D and predicts how a protein folds with Meta's
+                ESMFold model.
+              </p>
+              <ul class="tags"><li>Python</li><li>Streamlit</li><li>Biotite</li><li>py3Dmol</li><li>ESMFold</li><li>Pandas</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://streamgene.streamlit.app" target="_blank" rel="noopener">Open live app</a>
+                <a class="link-arrow" href="https://github.com/tarikcolic/streamgene" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- RNA-seq -->
+          <article class="project project--wide project--flip" data-cat="science" data-reveal>
+            <div class="project__visual project__visual--chart">
+              <figure class="viz viz--volcano" data-volcano>
+                <figcaption class="viz__head">
+                  <span class="viz__title">Differential expression, airway cells: dexamethasone vs control</span>
+                  <span class="viz__legend">
+                    <span><i class="sw sw--up"></i>Up <b data-up>458</b></span>
+                    <span><i class="sw sw--down"></i>Down <b data-down>372</b></span>
+                    <span><i class="sw sw--ns"></i>Not significant</span>
+                  </span>
+                </figcaption>
+                <div class="viz__plot">
+                  <svg role="img" aria-label="Volcano plot of log2 fold change against minus log10 adjusted p-value for the airway dataset."></svg>
+                  <div class="viz__tip" role="status" hidden></div>
+                </div>
+                <p class="viz__note">780 of 18,086 genes shown. Hover a point for its values.</p>
+              </figure>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2026</span><span>R · Bioconductor</span></div>
+              <h3 class="project__title">RNA-seq differential expression</h3>
+              <p class="project__desc">
+                Bulk and single-cell transcriptomics from raw counts to biology. DESeq2 models on the airway and parathyroid datasets,
+                PCA and volcano plots, GO and GSEA enrichment, and a Seurat workflow on PBMC3k. The plot on the left is drawn from my
+                own DESeq2 results.
+              </p>
+              <ul class="tags"><li>R</li><li>DESeq2</li><li>Seurat</li><li>clusterProfiler</li><li>ggplot2</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/tarikcolic/RNAseq-workshop" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SEIRD -->
+          <article class="project project--wide" data-cat="science" data-reveal>
+            <div class="project__visual project__visual--chart">
+              <figure class="viz viz--seird" data-seird>
+                <figcaption class="viz__head">
+                  <span class="viz__title">SEIRD model, population 11 million</span>
+                  <span class="viz__legend" data-legend></span>
+                </figcaption>
+                <div class="viz__plot">
+                  <svg role="img" aria-label="Line chart of susceptible, exposed, infectious, recovered and deceased people over time."></svg>
+                  <div class="viz__tip" role="status" hidden></div>
+                </div>
+                <div class="viz__controls">
+                  <label>
+                    <span>Reproduction number R₀ <output data-out="r0">3.55</output></span>
+                    <input type="range" min="1.2" max="6" step="0.05" value="3.55" data-in="r0">
+                  </label>
+                  <label>
+                    <span>Incubation period <output data-out="inc">5.2 days</output></span>
+                    <input type="range" min="2" max="14" step="0.1" value="5.2" data-in="inc">
+                  </label>
+                  <div class="viz__readout">
+                    <span>Infection peak <b data-peak>day 0</b></span>
+                    <span>Deceased by day 180 <b data-deaths>0</b></span>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2026</span><span>Python · Jupyter</span></div>
+              <h3 class="project__title">Epidemic modeling with ODEs</h3>
+              <p class="project__desc">
+                A five-compartment SEIRD model of COVID-19, solved with SciPy. The chart runs the same equations and starting
+                parameters in your browser with a Runge–Kutta solver. Move the sliders and the curves are recomputed.
+              </p>
+              <ul class="tags"><li>Python</li><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Jupyter</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/tarikcolic/covid19seird" target="_blank" rel="noopener">Notebook</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Auth -->
+          <article class="project" data-cat="web" data-reveal>
+            <div class="project__visual project__visual--hash" aria-hidden="true">
+              <div class="hash" data-hash>
+                <div class="hash__row"><span class="hash__k">password</span><span class="hash__v hash__v--pw" data-pw></span></div>
+                <div class="hash__arrow">bcrypt.hash(password, 10)</div>
+                <div class="hash__row hash__row--out">
+                  <span class="hash__k">stored</span>
+                  <span class="hash__v hash__v--out"><span class="h-alg">$2b$</span><span class="h-cost">10$</span><span class="h-salt" data-salt></span><span class="h-sum" data-sum></span></span>
+                </div>
+                <div class="hash__key"><span class="h-alg">algorithm</span><span class="h-cost">cost</span><span class="h-salt">salt</span><span class="h-sum">hash</span></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2026</span><span>University of Maribor</span></div>
+              <h3 class="project__title">Secure user authentication</h3>
+              <p class="project__desc">
+                Registration and login for the Information Security course. Passwords are salted and hashed with bcrypt before they
+                reach MySQL, and sessions gate a members-only dashboard.
+              </p>
+              <ul class="tags"><li>Node.js</li><li>Express</li><li>MySQL</li><li>bcrypt</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/tarikcolic/user-auth-website" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REST API -->
+          <article class="project" data-cat="web" data-reveal>
+            <div class="project__visual project__visual--api" aria-hidden="true">
+              <div class="api" data-api>
+                <ul class="api__routes">
+                  <li data-route="0"><b class="m m--get">GET</b><code>/users</code></li>
+                  <li data-route="1"><b class="m m--post">POST</b><code>/save</code></li>
+                  <li data-route="2"><b class="m m--put">PUT</b><code>/update/{id}</code></li>
+                  <li data-route="3"><b class="m m--del">DELETE</b><code>/delete/{id}</code></li>
+                </ul>
+                <pre class="api__res" data-res></pre>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2026</span><span>Java · Spring Boot</span></div>
+              <h3 class="project__title">User CRUD REST API</h3>
+              <p class="project__desc">
+                A Spring Boot API with create, read, update and delete endpoints over a MySQL users table, persisted through Spring
+                Data JPA and tested in Postman, with a small HTML, CSS and JavaScript client.
+              </p>
+              <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Spring Data JPA</li><li>MySQL</li><li>Maven</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/tarikcolic/users-restfulapi" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- School website -->
+          <article class="project" data-cat="web" data-reveal>
+            <div class="project__visual project__visual--site" aria-hidden="true">
+              <div class="browser">
+                <div class="browser__bar"><i></i><i></i><i></i><span>etsmostar.edu.ba</span></div>
+                <div class="browser__page">
+                  <div class="wf wf--nav"><b></b><span></span><span></span><span></span><span></span></div>
+                  <div class="wf wf--hero"><b></b><span></span><span></span><em></em></div>
+                  <div class="wf wf--cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2023</span><span>Laravel · PHP</span></div>
+              <h3 class="project__title">School website redesign</h3>
+              <p class="project__desc">
+                Redesigned the official website and user experience of the Electrical Engineering High School in Mostar, built with
+                Laravel, PHP and TailwindCSS.
+              </p>
+              <ul class="tags"><li>Laravel</li><li>PHP</li><li>TailwindCSS</li><li>UI/UX</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://etsmostar.edu.ba" target="_blank" rel="noopener">Visit site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nix.ba -->
+          <article class="project" data-cat="web" data-reveal>
+            <div class="project__visual project__visual--bid" aria-hidden="true">
+              <div class="bid" data-bid>
+                <div class="bid__item">
+                  <span class="bid__label">Current bid</span>
+                  <span class="bid__price"><span data-price>120</span> KM</span>
+                </div>
+                <ol class="bid__log" data-log></ol>
+                <div class="bid__timer"><span>Ends in</span><b data-timer>00:59</b></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span>2024 – 2026</span><span>Startup</span></div>
+              <h3 class="project__title">Nix.ba</h3>
+              <p class="project__desc">
+                A student startup I founded: an e-commerce platform for the Bosnian market with online bidding. I led business
+                development and product decisions, backed by the ZIRA Group scholarship.
+              </p>
+              <ul class="tags"><li>Product</li><li>E-commerce</li><li>Business development</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="more" data-reveal>
+          <h3 class="more__title">More on GitHub</h3>
+          <ul class="more__list">
+            <li><a href="https://github.com/tarikcolic/rosalind-challenges" target="_blank" rel="noopener"><span class="more__name">Rosalind challenges</span><span class="more__desc">Bioinformatics algorithms written from scratch</span><span class="more__lang">Python</span></a></li>
+            <li><a href="https://tarikcolic.github.io/gameoflife/" target="_blank" rel="noopener"><span class="more__name">Conway's Game of Life</span><span class="more__desc">Interactive cellular automaton, playable online</span><span class="more__lang">JavaScript</span></a></li>
+            <li><a href="https://github.com/tarikcolic/e2s" target="_blank" rel="noopener"><span class="more__name">English2Success</span><span class="more__desc">Site for a volunteer English-teaching initiative</span><span class="more__lang">Angular</span></a></li>
+            <li><a href="https://github.com/tarikcolic/howmuch-app" target="_blank" rel="noopener"><span class="more__name">HowMuch</span><span class="more__desc">Personal budgeting app for savings and goals</span><span class="more__lang">C++</span></a></li>
+            <li><a href="https://github.com/tarikcolic/R_introduction" target="_blank" rel="noopener"><span class="more__name">Introduction to R</span><span class="more__desc">Exploratory analysis of R's built-in datasets</span><span class="more__lang">R</span></a></li>
+          </ul>
+          <a class="btn btn--ghost more__all" href="https://github.com/tarikcolic?tab=repositories" target="_blank" rel="noopener" data-magnetic>All repositories on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">03</span>
+          <h2 class="section__title" id="exp-title">Experience</h2>
+        </header>
+
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Experience categories" data-reveal>
+            <button role="tab" id="tab-work" aria-controls="panel-work" aria-selected="true">Work &amp; leadership</button>
+            <button role="tab" id="tab-sch" aria-controls="panel-sch" aria-selected="false" tabindex="-1">Scholarships</button>
+            <button role="tab" id="tab-vol" aria-controls="panel-vol" aria-selected="false" tabindex="-1">Programs &amp; volunteering</button>
+            <span class="tabs__indicator" aria-hidden="true"></span>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-work" aria-labelledby="tab-work">
+            <ol class="timeline">
+              <li class="tl" data-reveal>
+                <span class="tl__date">02.2025 – 12.2025</span>
+                <div class="tl__body">
+                  <h3>Design Team Coordinator <span>· BEST Mostar</span></h3>
+                  <p>Led the design team of the Mostar branch of the Board of European Students of Technology.</p>
+                </div>
+              </li>
+              <li class="tl" data-reveal>
+                <span class="tl__date">10.2024 – 02.2026</span>
+                <div class="tl__body">
+                  <h3>Founder <span>· Nix.ba</span></h3>
+                  <p>Founded a student startup building an e-commerce platform with online bidding for the Bosnian market. Focused on business development and product.</p>
+                </div>
+              </li>
+              <li class="tl" data-reveal>
+                <span class="tl__date">2025</span>
+                <div class="tl__body">
+                  <h3>IT and English Tutor <span>· Volunteer</span></h3>
+                  <p>Taught high-school and first-year bachelor students the basics of C++ and conversational English.</p>
+                </div>
+              </li>
+              <li class="tl" data-reveal>
+                <span class="tl__date">2020 – present</span>
+                <div class="tl__body">
+                  <h3>Graphic Designer <span>· Freelance</span></h3>
+                  <p>Design for social media, print posters, books and magazines, and UI/UX for apps and websites, for a range of organizations.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-sch" aria-labelledby="tab-sch" hidden>
+            <ol class="timeline">
+              <li class="tl">
+                <span class="tl__date">11.2025 – 09.2026</span>
+                <div class="tl__body">
+                  <h3>HTEC Scholarship</h3>
+                  <p>Mentorship, new connections and room to grow, and the push to give back to my community.</p>
+                </div>
+              </li>
+              <li class="tl">
+                <span class="tl__date">11.2024 – 05.2025</span>
+                <div class="tl__body">
+                  <h3>ZIRA Group Scholarship</h3>
+                  <p>Gave me the confidence to step outside my comfort zone and put my energy into building Nix.ba.</p>
+                </div>
+              </li>
+              <li class="tl">
+                <span class="tl__date">2023 – present</span>
+                <div class="tl__body">
+                  <h3>BH Futures Foundation <span>· Alumni scholar</span></h3>
+                  <p>Built teamwork, communication and collaboration skills. Designed social media posts and merch for the Futures Leaders Summit 2026.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-vol" aria-labelledby="tab-vol" hidden>
+            <ol class="timeline">
+              <li class="tl">
+                <span class="tl__date">2024 – 2025</span>
+                <div class="tl__body">
+                  <h3>UMiD 18 Youth Leader Training</h3>
+                  <p>A one-year incubator for young leaders active in democratic society.</p>
+                </div>
+              </li>
+              <li class="tl">
+                <span class="tl__date">12.2023 – 11.2025</span>
+                <div class="tl__body">
+                  <h3>Youth Ambassadors of Non-Formal Learning</h3>
+                  <p>YAMNFL2 builds young people's capacities and employability through non-formal methods. Exchanges in Podgorica, Cagliari and Thessaloniki.</p>
+                </div>
+              </li>
+              <li class="tl">
+                <span class="tl__date">2021</span>
+                <div class="tl__body">
+                  <h3>Red Cross Youth Mostar</h3>
+                  <p>Member of the city's Red Cross Youth, where I trained in life-saving skills.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">04</span>
+          <h2 class="section__title" id="edu-title">Education</h2>
+        </header>
+
+        <div class="edu">
+          <article class="edu__card" data-reveal>
+            <div class="edu__top"><span class="edu__date">10.2024 – present</span><span class="badge">Bachelor, 240 ECTS</span></div>
+            <h3>Faculty of Information Technologies</h3>
+            <p class="edu__school">University “Džemal Bijedić”, Mostar</p>
+            <ul class="chips chips--quiet"><li>Web Development</li><li>Object-Oriented Programming</li><li>Relational Databases</li><li>Software Analysis &amp; Design</li></ul>
+          </article>
+
+          <article class="edu__card" data-reveal>
+            <div class="edu__top"><span class="edu__date">02.2026 – 07.2026</span><span class="badge badge--accent">Erasmus+</span></div>
+            <h3>Faculty of Electrical Engineering and Computer Science</h3>
+            <p class="edu__school">University of Maribor, Slovenia</p>
+            <ul class="chips chips--quiet"><li>Non-Relational Databases</li><li>Information Security</li><li>Computer Graphics</li><li>Project Management</li></ul>
+          </article>
+
+          <article class="edu__card" data-reveal>
+            <div class="edu__top"><span class="edu__date">2020 – 2024</span><span class="badge">High school</span></div>
+            <h3>Electrical Engineering High School “Salih Salko Ćurić”</h3>
+            <p class="edu__school">Mostar</p>
+            <ul class="chips chips--quiet"><li>Electrical Engineering</li><li>C++</li><li>C#</li><li>Java for Mobile</li></ul>
+            <p class="edu__thesis"><span>Thesis</span>“Web application for data analysis of genetic code and protein modeling”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Python</span><span>R</span><span>TypeScript</span><span>Java</span><span>C#</span><span>C++</span><span>Node.js</span><span>Spring Boot</span><span>Laravel</span><span>MySQL</span><span>GraphQL</span><span>NumPy</span><span>Streamlit</span><span>DESeq2</span><span>Figma</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">05</span>
+          <h2 class="section__title" id="skills-title">Skills</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skill-group" data-reveal>
+            <h3>Languages</h3>
+            <ul class="chips"><li>Python</li><li>R</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>C#</li><li>C++</li><li>SQL</li><li>HTML</li><li>CSS</li><li>MATLAB</li></ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Back end &amp; databases</h3>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>Spring Boot</li><li>Laravel</li><li>REST APIs</li><li>MySQL</li><li>GraphQL</li><li>Angular</li></ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Data science</h3>
+            <ul class="chips"><li>NumPy</li><li>SciPy</li><li>SymPy</li><li>Pandas</li><li>Streamlit</li><li>Jupyter</li><li>DESeq2</li><li>Seurat</li><li>Bash</li></ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Tools</h3>
+            <ul class="chips"><li>Git</li><li>DataGrip</li><li>Postman</li><li>Maven</li><li>Excel</li></ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Design</h3>
+            <ul class="chips"><li>Figma</li><li>Adobe Creative Suite</li><li>Blender</li></ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Working style</h3>
+            <ul class="chips"><li>Leadership</li><li>Problem solving</li><li>Adaptability</li><li>Teamwork</li><li>Time management</li></ul>
+          </div>
+        </div>
+
+        <div class="skills__extra">
+          <div class="langs" data-reveal>
+            <h3>Spoken languages</h3>
+            <ul>
+              <li><span>Bosnian / Croatian / Serbian</span><span class="cefr" style="--lvl:7" aria-label="Native"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>Native</b></li>
+              <li><span>English</span><span class="cefr" style="--lvl:5" aria-label="C1"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>C1</b></li>
+              <li><span>French</span><span class="cefr" style="--lvl:2" aria-label="A2"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>A2</b></li>
+              <li><span>German</span><span class="cefr" style="--lvl:1" aria-label="A1"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>A1</b></li>
+            </ul>
+          </div>
+
+          <div class="lists" data-reveal>
+            <div>
+              <h3>Awards</h3>
+              <ul class="list">
+                <li><b>1st place</b> S.T.A.R. Challenge 2023</li>
+                <li><b>1st place</b> Philosophical Essay on Human Rights</li>
+                <li>FIT Coding Challenge 2025</li>
+                <li>FIT Coding Challenge 2022</li>
+                <li>IT Challenge Maglaj</li>
+                <li>International Design Thinking Workshop, BS ITECH Hamburg</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Certifications</h3>
+              <ul class="list">
+                <li>EF SET English Certificate, C1</li>
+                <li>Goethe-Zertifikat A1</li>
+                <li>Relational Database Modeling</li>
+                <li>Microsoft Excel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__num">06</span>
+          <h2 class="section__title" id="contact-title">Contact</h2>
+        </header>
+
+        <p class="contact__big" data-reveal data-words>Have a role, a project or a dataset in mind? Let's talk.</p>
+
+        <div class="contact__mail" data-reveal>
+          <a class="contact__email" href="mailto:tarikcolic22@gmail.com">tarikcolic22@gmail.com</a>
+          <button class="btn btn--ghost btn--small" type="button" data-copy="tarikcolic22@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <ul class="contact__links" data-reveal>
+          <li><a href="https://github.com/tarikcolic" target="_blank" rel="noopener"><span>GitHub</span><small>github.com/tarikcolic</small></a></li>
+          <li><a href="https://www.linkedin.com/in/tarikcolic" target="_blank" rel="noopener"><span>LinkedIn</span><small>linkedin.com/in/tarikcolic</small></a></li>
+          <li><a href="assets/Tarik_Colic_CV.pdf" download><span>Résumé</span><small>PDF, 2 pages</small></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span data-year>2026</span> Tarik Čolić</span>
+      <span>Mostar, Bosnia and Herzegovina</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
