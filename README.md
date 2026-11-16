@@ -31,7 +31,7 @@ favicon.svg
 assets/css/style.css        design tokens (light and dark) at the top, then components
 assets/js/main.js           interactions, one isolated block per feature
 assets/data/airway-volcano.json   780-gene subset of real DESeq2 results
-assets/img/                 portrait, social preview image (og.jpg)
+assets/img/                 portrait, social preview (og.jpg), kilim band tile (kilim.svg)
 assets/Tarik_Colic_CV.pdf   downloadable CV
 scripts/build_volcano_data.py     regenerates the volcano data
 .nojekyll                   tells Pages to serve files without Jekyll
@@ -39,11 +39,14 @@ scripts/build_volcano_data.py     regenerates the volcano data
 
 ## Editing content
 
-- Text, projects, experience and skills all live in `index.html`. Each project is an `<article class="project">`; its `data-cat` attribute (`web`, `science`, or both) controls the filters.
+- Text, projects, experience and skills all live in `index.html`. Each project is an `<article class="project">` inside the carousel; its `data-cat` attribute (`web`, `science`, or both) controls the filters. Add or remove articles freely: the carousel wraps around any number of cards (four or more looks best).
 - Colors are CSS variables at the top of `style.css`. `--accent` is the cobalt from the CV.
 - Replace `assets/Tarik_Colic_CV.pdf` to update the downloadable CV. Keep the filename or update the links.
 
 ## Notes
+
+- Tech logos in the logo band come from [Simple Icons](https://simpleicons.org) (CC0), inlined as an SVG sprite at the top of `index.html`.
+- The folk motifs (rozeta, spirala, kolo, loza, rogovi, ćilim, vučji zub, stablo) are drawn as inline SVG, based on stećak and kilim ornaments.
 
 - Animations respect `prefers-reduced-motion`; all content is visible without JavaScript.
 - The SEIRD chart re-solves the model from `covid19seird` in the browser (RK4, same parameters as the notebook).
